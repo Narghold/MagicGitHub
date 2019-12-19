@@ -9,11 +9,12 @@ import java.util.UUID;
 
 public abstract class FakeApiServiceGenerator {
 
-
+    //Retourne liste issue de FAKE_USERS
     static List<User> generateUsers() {
         return new ArrayList<>(FAKE_USERS);
     }
 
+    //Liste des utilisateurs inscrits
     public static List<User> FAKE_USERS = Arrays.asList(
             new User("001", "Jake", "https://api.adorable.io/AVATARS/512/1.png"),
             new User("002", "Paul", "https://api.adorable.io/AVATARS/512/2.png"),
@@ -37,6 +38,7 @@ public abstract class FakeApiServiceGenerator {
             new User("020", "Rémi", "https://api.adorable.io/AVATARS/512/20.png")
     );
 
+    //Liste des utilisateurs ajoutés aléatoirement
     public static List<User> FAKE_USERS_RANDOM = Arrays.asList(
             new User("021", "Lea", "https://api.adorable.io/AVATARS/512/21.png"),
             new User("022", "Geoffrey", "https://api.adorable.io/AVATARS/512/22.png"),
